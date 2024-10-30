@@ -1,6 +1,7 @@
 import { defineConfig } from "astro/config";
+import vercel from "@astrojs/vercel/serverless";
 
 export default defineConfig({
-  site: "https://Ashwin19v.github.io",
-  base: "https://github.com/Ashwin19v/SentialGuardAI/",
+  output: "server",
+  adapter: vercel(),
 });
