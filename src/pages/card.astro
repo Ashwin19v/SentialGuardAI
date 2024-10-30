@@ -1,0 +1,156 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+---
+
+<Layout title="Card">
+	<main>
+   
+		 <div class="card-container">
+
+    <div class="card default">
+      <div class="icon">⦿</div>
+      <h2>Eliminate network blind spots</h2>
+    </div>
+    
+ 
+    <div class="card hover">
+      <div class="icon">⦿</div>
+      <h2>Eliminate network blind spots</h2>
+      <p>Leverage high-performance protection that is purpose-built for the entirety of your network environment, from the cloud to the data centre to the factory floor.</p>
+      <div class="arrow">→</div>
+    </div>
+  </div>
+		 <div class="card-container">
+
+    <div class="card default">
+      <div class="icon">⦿</div>
+      <h2>Eliminate network blind spots</h2>
+    </div>
+    
+ 
+    <div class="card hover">
+      <div class="icon">⦿</div>
+      <h2>Eliminate network blind spots</h2>
+      <p>Leverage high-performance protection that is purpose-built for the entirety of your network environment, from the cloud to the data centre to the factory floor.</p>
+      <div class="arrow">→</div>
+    </div>
+  </div>
+		 <div class="card-container">
+
+    <div class="card default">
+      <div class="icon">⦿</div>
+      <h2>Eliminate network blind spots</h2>
+    </div>
+    
+ 
+    <div class="card hover">
+      <div class="icon">⦿</div>
+      <h2>Eliminate network blind spots</h2>
+      <p>Leverage high-performance protection that is purpose-built for the entirety of your network environment, from the cloud to the data centre to the factory floor.</p>
+      <div class="arrow">→</div>
+    </div>
+  </div>
+
+	</main>
+</Layout>
+
+ <style>
+ main{
+    display: flex;
+      justify-content:space-between;
+      align-items: center;
+ }
+    .card-container {
+    
+      width: 300px;
+      height: 400px;
+      position: relative;
+      border-radius: 8px;
+      overflow: hidden;
+      transition: transform 1s ease;
+      padding: 15px;
+      margin: 20px auto;
+    }
+
+
+    .card {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 10px 8px;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      text-align: left;
+      transition: all 1s ease-out;
+    }
+
+ 
+    .card.default {
+      background: linear-gradient(135deg, #290000, #900000);
+      opacity: 1;
+    }
+
+ 
+    .card.hover {
+      background: #fff;
+      color: #000;
+      opacity: 0;
+      padding-top: 35px;
+      justify-content: flex-start;
+    }
+
+
+    .icon {
+      position: absolute;
+      top: 20px;
+      right: 50px;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      border: 2px solid #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 14px;
+    }
+
+
+    .card-container:hover .default {
+      opacity: 0;
+    }
+
+    .card-container:hover .hover {
+      opacity: 1;
+    }
+
+
+    .card.hover .icon {
+      border-color: #900000;
+      color: #900000;
+    }
+
+    .card.hover p {
+      margin: 10px 0 0;
+      padding: 0 10px;
+    }
+
+    .card.hover .arrow {
+      display: inline-block;
+      margin-top: 20px;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      border: 1px solid #000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+  </style>

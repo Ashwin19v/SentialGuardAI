@@ -1,0 +1,144 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+<Layout title='cloud Platform'>
+    <main>
+        <div class="card-container">
+    <div class="card">
+        <div class="icon">☁️</div> <!-- Placeholder for cloud icon -->
+        <p class="title">Public Cloud</p>
+        <div class="logos">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" alt="AWS logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" alt="AWS logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" alt="AWS logo">
+       
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a8/Microsoft_Azure_Logo.svg" alt="Azure logo">
+        </div>
+        <a href="#" class="learn-more">
+            Learn more
+            <span>➔</span>
+        </a>
+    </div>
+    <div class="card">
+        <div class="icon">☁️</div> 
+        <p class="title">Public Cloud</p>
+        <div class="logos">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" alt="AWS logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" alt="AWS logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" alt="AWS logo">
+       
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a8/Microsoft_Azure_Logo.svg" alt="Azure logo">
+        </div>
+        <a href="#" class="learn-more">
+            Learn more
+            <span>➔</span>
+        </a>
+    </div>
+    <div class="card">
+        <div class="icon">☁️</div> <!-- Placeholder for cloud icon -->
+        <p class="title">Public Cloud</p>
+        <div class="logos">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" alt="AWS logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" alt="AWS logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" alt="AWS logo">
+       
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a8/Microsoft_Azure_Logo.svg" alt="Azure logo">
+        </div>
+        <a href="#" class="learn-more">
+            Learn more
+            <span>➔</span>
+        </a>
+    </div>
+</div>
+
+    </main>
+</Layout>
+ <style>
+ 
+        .card-container {
+            width: 90%;
+            height: 400px;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 25px;
+            margin: 25px auto;
+            
+        }
+
+
+        .card {
+            width: 350px;
+            height: 100%;
+            background-color: #184c3b; 
+            color: white;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transition: background-color 0.3s ease, transform 1s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card:hover {
+            background-color: #ffffff; 
+            color: #184c3b; 
+            transform: scale(1.05);
+        }
+
+   
+        .card .icon {
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+
+  
+        .card .title {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 0;
+        }
+
+ 
+        .card .logos {
+            margin: 10px 0;
+            display: flex;
+            gap: 10px;
+        }
+
+      
+        .logos img {
+            width: 40px;
+            height: auto;
+        }
+
+   
+        .card .learn-more {
+            font-size: 16px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            color: inherit;
+        }
+
+     
+        .card:hover .learn-more {
+            color: #184c3b; 
+        }
+
+  
+        .card:hover::after {
+            content: '';
+            position: absolute;
+            bottom: 80px;
+            width: 90%;
+            height: 1px;
+            background-color: #184c3b;
+        }
+    </style>
